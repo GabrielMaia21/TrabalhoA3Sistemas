@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "a5a344ca-6ae6-4ef2-92d9-239e4dcad001",
+		"name": "Vendas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31305159"
+	},
+	"item": [
+		{
+			"name": "ListarPedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FazerPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_produto\":\"9a550662-68ed-4eed-add1-451ee67609e7\",\r\n    \"data_venda\":\"2023-02-21\",\r\n    \"id_cliente\":\"ef6c76ab-9b6a-47d1-92ae-1a17dd65a3d5\",\r\n    \"quantidade_pedido\": 10\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RelatorioProdutoMaisVendido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendas/produto-mais-vendido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendas",
+						"produto-mais-vendido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProdutoPorCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendas/produto-por-cliente/719ebc14-33f7-413f-b46e-d9d937f5b608",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendas",
+						"produto-por-cliente",
+						"719ebc14-33f7-413f-b46e-d9d937f5b608"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsumoMedioPorCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendas/media-consumo-por-cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendas",
+						"media-consumo-por-cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
